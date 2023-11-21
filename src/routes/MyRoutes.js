@@ -10,7 +10,7 @@ const MyRoutes = () => {
     { link: "", element: <></>, id: 2 },
   ];
   const PUBLIC_ROUTES = [
-    { link: "/", element: <Home />, id: 1 },
+    { link: "/home", element: <Home />, id: 1 },
     { link: "/basket", element: <Basket />, id: 2 },
     { link: "/admin", element: <Admin />, id: 3 },
   ];
