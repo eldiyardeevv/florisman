@@ -1,0 +1,38 @@
+#footer {
+  background: #fff8f5;
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    &__text {
+      &__h1 {
+        color: #272626;
+        font-size: 36px;
+        font-weight: 600;
+        &__p {
+          color: #272626;
+          font-size: 24px;
+          margin: 21px 0 6px 0;
+          font-weight: 600;
+        }
+        &__p1 {
+          color: #272626;
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+    &__logo {
+      display: flex;
+      gap: 18px;
+      margin: 30px 0;
+    }
+    h2 {
+      color: #272626;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}
