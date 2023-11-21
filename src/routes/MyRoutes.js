@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "../components/Navbar/Home/Home";
 import Basket from "../components/product/Basket/Basket";
 import Admin from "./../components/admin/Admin";
 
@@ -10,7 +9,7 @@ const MyRoutes = () => {
     { link: "", element: <></>, id: 2 },
   ];
   const PUBLIC_ROUTES = [
-    { link: "/home", element: <Home />, id: 1 },
+    // { link: "/home", element: <Home />, id: 1 },
     { link: "/basket", element: <Basket />, id: 2 },
     { link: "/admin", element: <Admin />, id: 3 },
   ];
