@@ -18,7 +18,7 @@ const Header = () => {
               </NavLink>
             </span>
             <span>
-              <NavLink to="/">
+              <NavLink to="/home">
                 <CottageIcon />
               </NavLink>
             </span>
