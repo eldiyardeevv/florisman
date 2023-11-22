@@ -1,22 +1,14 @@
 import React from "react";
 import image1 from "../../img/image-bg.png";
 import roma from "../../img/Ромашки.png";
-// import Slider from "react-slick";
 
 const Home = () => {
-  // var settings = {
-  //   dots: true,
-  //   infinite: false,
-  //   speed: 500,
-  //   slidesToScroll: 4,
-  //   slidesToShow: 4,
-  // };
   return (
     <>
       <div id="home">
+        <img src={image1} alt="" />
         <div className="container">
           <div className="home">
-            <img src={image1} alt="" />
             <div className="home__text">
               <p className="home__text__p">Подарите ощущение праздника</p>
               <h1 className="home__text__p__h1">
@@ -31,7 +23,6 @@ const Home = () => {
         <h1>Скидки</h1>
         <div className="container">
           <div className="skidki">
-            {/* <Slider {...settings}> */}
             <div className="skidki__card">
               <div className="skidki__card__block">
                 <img src={roma} alt="" />
@@ -112,7 +103,6 @@ const Home = () => {
                 <p className="skidki__card__text__p__p1__p2">БУКЕТ ДНЯ</p>
               </div>
             </div>
-            {/* </Slider> */}
           </div>
         </div>
       </section>
