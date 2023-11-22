@@ -7,6 +7,8 @@ import IconButton from "@mui/material/IconButton";
 import MenuItem from "@mui/material/MenuItem";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Menu from "@mui/material/Menu";
+import CottageIcon from "@mui/icons-material/Cottage";
+
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -71,8 +73,7 @@ const Header = () => {
             </span>
             <span>
               <NavLink to="/home">
-                {/* <CottageIcon /> */}
-                HOME
+                <CottageIcon />
               </NavLink>
             </span>
           </div>
@@ -108,9 +109,6 @@ const Header = () => {
               >
                 <AccountCircle />
               </IconButton>
-              {/* <NavLink>
-                <GroupAddIcon />
-              </NavLink> */}
             </div>
           </div>
         </div>
