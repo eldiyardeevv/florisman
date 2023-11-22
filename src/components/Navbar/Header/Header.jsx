@@ -1,12 +1,64 @@
 import React from "react";
-import "./Header.scss";
-import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
-// import CottageIcon from "@mui/icons-material/Cottage";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import GroupAddIcon from "@mui/icons-material/GroupAdd";
-import img from "../../../img/img1.jpg";
 import { NavLink } from "react-router-dom";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import img from "../../../img/img1.jpg";
+import IconButton from "@mui/material/IconButton";
+import MenuItem from "@mui/material/MenuItem";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import Menu from "@mui/material/Menu";
 const Header = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+
+  const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const handleProfileMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    handleMobileMenuClose();
+  };
+
+  const handleMobileMenuOpen = (event) => {
+    setMobileMoreAnchorEl(event.currentTarget);
+  };
+
+  const menuId = "primary-search-account-menu";
+  const renderMenu = (
+    <Menu
+      anchorEl={anchorEl}
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      id={menuId}
+      keepMounted
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      open={isMenuOpen}
+      onClose={handleMenuClose}
+    >
+      <NavLink to="/registr">
+        <MenuItem onClick={handleMenuClose}>Sign Up</MenuItem>
+      </NavLink>
+      <NavLink to="/login">
+        <MenuItem onClick={handleMenuClose}>Sign In</MenuItem>
+      </NavLink>
+      <NavLink to="">
+        <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
+      </NavLink>
+    </Menu>
+  );
   return (
     <header id="header">
       <div className="container">
@@ -44,14 +96,26 @@ const Header = () => {
                 <ShoppingCartIcon />
               </NavLink>
             </span>
-            <span>
-              <NavLink>
+            <div>
+              <IconButton
+                size="large"
+                edge="end"
+                aria-label="account of current user"
+                aria-controls={menuId}
+                aria-haspopup="true"
+                onClick={handleProfileMenuOpen}
+                color="inherit"
+              >
+                <AccountCircle />
+              </IconButton>
+              {/* <NavLink>
                 <GroupAddIcon />
-              </NavLink>
-            </span>
+              </NavLink> */}
+            </div>
           </div>
         </div>
       </div>
+      {renderMenu}
     </header>
   );
 };

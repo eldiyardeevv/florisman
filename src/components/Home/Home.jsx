@@ -36,11 +36,9 @@ const Home = () => {
               <div className="skidki__card__block">
                 <img src={roma} alt="" />
                 <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
+                  Самые красивые букеты цветов
                 </p>
-                <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
-                </p>
+                <p className="skidki__card__block__p">для вас</p>
                 <div className="skidki__card__com">
                   <h4 className="skidki__card__com__h4">3700 com</h4>
                   <button className="skidki__card__com__h4__btn">
@@ -58,11 +56,9 @@ const Home = () => {
               <div className="skidki__card__block">
                 <img src={roma} alt="" />
                 <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
+                  Самые красивые букеты цветов
                 </p>
-                <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
-                </p>
+                <p className="skidki__card__block__p">для вас</p>
                 <div className="skidki__card__com">
                   <h4 className="skidki__card__com__h4">3700 com</h4>
                   <button className="skidki__card__com__h4__btn">
@@ -80,11 +76,9 @@ const Home = () => {
               <div className="skidki__card__block">
                 <img src={roma} alt="" />
                 <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
+                  Самые красивые букеты цветов
                 </p>
-                <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
-                </p>
+                <p className="skidki__card__block__p">для вас</p>
                 <div className="skidki__card__com">
                   <h4 className="skidki__card__com__h4">3700 com</h4>
                   <button className="skidki__card__com__h4__btn">
@@ -102,11 +96,9 @@ const Home = () => {
               <div className="skidki__card__block">
                 <img src={roma} alt="" />
                 <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
+                  Самые красивые букеты цветов
                 </p>
-                <p className="skidki__card__block__p">
-                  N1 BISHKEK Букет для девушек
-                </p>
+                <p className="skidki__card__block__p">для вас</p>
                 <div className="skidki__card__com">
                   <h4 className="skidki__card__com__h4">3700 com</h4>
                   <button className="skidki__card__com__h4__btn">
