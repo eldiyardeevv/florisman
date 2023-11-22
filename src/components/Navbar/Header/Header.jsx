@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
-import CottageIcon from "@mui/icons-material/Cottage";
+// import CottageIcon from "@mui/icons-material/Cottage";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import img from "../../../img/img1.jpg";
@@ -19,7 +19,8 @@ const Header = () => {
             </span>
             <span>
               <NavLink to="/home">
-                <CottageIcon />
+                {/* <CottageIcon /> */}
+                HOME
               </NavLink>
             </span>
           </div>

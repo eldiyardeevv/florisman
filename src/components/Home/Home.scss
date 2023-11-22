@@ -1,0 +1,124 @@
+#home {
+  .home {
+    img {
+      width: 1440px;
+      height: 873px;
+    }
+    position: relative;
+    &__text {
+      position: absolute;
+      left: 135px;
+      bottom: 130px;
+
+      &__p {
+        color: #272626;
+        font-size: 24px;
+        font-weight: 400;
+        &__h1 {
+          color: #272626;
+          font-size: 64px;
+          font-weight: 700;
+          letter-spacing: 1.28px;
+          width: 692px;
+          &__btn {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            border-radius: 37px;
+            background: #d7537a;
+            width: 275px;
+            height: 74px;
+          }
+        }
+      }
+    }
+  }
+}
+#skidki {
+  padding: 30px 0;
+  background: #fcefe4;
+  h1 {
+    font-weight: 800;
+    font-size: 60px;
+    margin: 10px 0 20px 180px;
+  }
+  .skidki {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    position: relative;
+    &__card {
+      &__block {
+        width: 284px;
+        height: 400px;
+        border-radius: 0px 20px 20px 20px;
+        background: #fdfdfd;
+        img {
+          margin: 10px 0 0 8px;
+        }
+        &__p {
+          color: #272626;
+          font-size: 16px;
+          margin: 10px 0 0 8px;
+          font-weight: 500;
+        }
+      }
+      &__com {
+        display: flex;
+        margin: 30px 0 30px 8px;
+        align-items: center;
+        gap: 40px;
+        &__h4 {
+          color: #7ea048;
+          font-size: 16px;
+          font-weight: 500;
+          &__btn {
+            color: #fff;
+            border-radius: 20px;
+            width: 140px;
+            height: 40px;
+            background: #d7537a;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+      &__text {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        &__p {
+          color: #fff;
+          font-size: 14px;
+          border-radius: 0px 6px 6px 0px;
+          background: #fd4f79;
+          width: 115px;
+          padding-left: 5px;
+          height: 25px;
+          font-weight: 500;
+          &__p1 {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            width: 115px;
+            height: 25px;
+            margin: 5px 0;
+            border-radius: 0px 6px 6px 0px;
+            padding-left: 5px;
+            background: #4ae950;
+            &__p2 {
+              color: #fff;
+              font-size: 14px;
+              font-weight: 500;
+              border-radius: 0px 6px 6px 0px;
+              background: #fd984f;
+              padding-left: 5px;
+              width: 115px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
