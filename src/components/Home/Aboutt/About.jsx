@@ -10,6 +10,8 @@ import foto5 from "./../../../img/foto5.png";
 import foto6 from "./../../../img/foto6.png";
 import foto7 from "./../../../img/foto7.png";
 import foto8 from "./../../../img/foto8.png";
+import ramka from "./../../../img/Рамка.png";
+
 const About = () => {
   const [img, setImg] = useState("");
   const [price, setPrice] = useState("");
@@ -73,19 +75,43 @@ const About = () => {
       <section id="favorite">
         <div className="container">
           <div className="favorite__info">
-            <h1 className="favorite__title1">FLORISTMAN</h1>
+            <span className="favorite__title1">FLORISTMAN</span>
             <p className="favorite__title2">Широкий выбор на любой вкус</p>
             <div className="favorite__block1">
-              <img src={foto1} alt="img" />
-              <img src={foto2} alt="img" />
-              <img src={foto3} alt="img" />
-              <img src={foto4} alt="img" />
+              <div>
+                <img src={foto1} alt="img" />
+                <button className="favorite__btn">Цветы</button>
+              </div>
+              <div>
+                <img src={foto2} alt="img" />
+                <button className="favorite__btn">Воздушные шары</button>
+              </div>
+              <div>
+                <img src={foto3} alt="img" />
+                <button className="favorite__btn">Аксессуары</button>
+              </div>
+              <div>
+                <img src={foto4} alt="img" />
+                <button className="favorite__btn">Фруктовые сладости</button>
+              </div>
             </div>
             <div className="favorite__block2">
-              <img src={foto5} alt="img" />
-              <img src={foto6} alt="img" />
-              <img src={foto7} alt="img" />
-              <img src={foto8} alt="img" />
+              <div>
+                <img src={foto5} alt="img" />
+                <button className="favorite__btn">Сладости</button>
+              </div>
+              <div>
+                <img src={foto6} alt="img" />
+                <button className="favorite__btn">Подарки</button>
+              </div>
+              <div>
+                <img src={foto7} alt="img" />
+                <button className="favorite__btn">Услуги</button>
+              </div>
+              <div>
+                <img src={foto8} alt="img" />
+                <button className="favorite__btn">Комнатные растения</button>
+              </div>
             </div>
           </div>
         </div>
