@@ -1,0 +1,60 @@
+{
+  "product": [
+    {
+      "title": "rtyui",
+      "description": "rtyui",
+      "category": "dfghj",
+      "price": "456",
+      "image": "fghj",
+      "id": 1
+    },
+    {
+      "title": "rtyui",
+      "description": "erty",
+      "category": "werty",
+      "price": "4567",
+      "image": "rty",
+      "id": 2
+    },
+    {
+      "title": "ertyui",
+      "description": "erty",
+      "category": "erty",
+      "price": "5678",
+      "image": "fghj",
+      "id": 3
+    },
+    {
+      "title": "dfgh",
+      "description": "fgh",
+      "category": "fgh",
+      "price": 567,
+      "image": "cvbn",
+      "id": 4
+    },
+    {
+      "title": "rgh",
+      "description": "dfgh",
+      "category": "dfgh",
+      "price": "4567",
+      "image": "rftgyh",
+      "id": 5
+    },
+    {
+      "title": "rtyu",
+      "description": "fghj",
+      "category": "fghj",
+      "price": 567,
+      "image": "ghj",
+      "id": 6
+    },
+    {
+      "title": "fghjk",
+      "description": "dfghj",
+      "category": "sdfghj",
+      "price": 123456,
+      "image": "dfghj",
+      "id": 7
+    }
+  ]
+}
