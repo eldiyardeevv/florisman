@@ -2,12 +2,12 @@ import { Container } from "@mui/material";
 import React from "react";
 import Form from "./../form/From";
 
-const AddProduct = () => {
+const EditProduct = () => {
   return (
     <Container>
-      <Form isEdit={true} />
+      <Form isEdit={false} />
     </Container>
   );
 };
 
-export default AddProduct;
+export default EditProduct;

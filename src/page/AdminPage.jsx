@@ -1,7 +1,11 @@
 import React from "react";
-
-const A = () => {
-  return <div>Admin</div>;
+import AddProduct from "../components/product/AddProduct";
+const AdminPage = () => {
+  return (
+    <div>
+      <AddProduct />
+    </div>
+  );
 };
 
-export default A;
+export default AdminPage;

@@ -1,15 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Basket from "../components/product/Basket/Basket";
-import Admin from "./../components/admin/Admin";
+// import Admin from "./../components/admin/Admin";
 import HomePage from "./../components/Home/HomePage/HomePage";
 import Login from "../components/authentocation/Login";
 import Registr from "../components/authentocation/Registr";
+import AdminPage from "../page/AdminPage";
+import EditProduct from "../components/product/EditProduct";
 
 const MyRoutes = () => {
   const ADMIN_ROUTES = [
-    { link: "", element: <></>, id: 1 },
-    { link: "/admin", element: <Admin />, id: 2 },
+    { link: "/admin", element: <AdminPage />, id: 1 },
+    { link: "/edit/:id", element: <EditProduct />, id: 2 },
   ];
   const PUBLIC_ROUTES = [
     { link: "/home", element: <HomePage />, id: 1 },

@@ -1,6 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import { NavLink, useNavigate } from "react-router-dom";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import img from "../../../img/img1.jpg";
 import IconButton from "@mui/material/IconButton";
@@ -8,8 +7,11 @@ import MenuItem from "@mui/material/MenuItem";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Menu from "@mui/material/Menu";
 import CottageIcon from "@mui/icons-material/Cottage";
+import Admin from "../../admin/Admin";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -66,11 +68,16 @@ const Header = () => {
       <div className="container">
         <div className="header">
           <div className="header__admin">
-            <span>
-              <NavLink to="/admin">
-                <AdminPanelSettingsIcon />
-              </NavLink>
-            </span>
+            <IconButton
+              onClick={() => navigate("/admin ")}
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              sx={{ mr: 2 }}
+            >
+              <Admin />
+            </IconButton>
             <span>
               <NavLink to="/home">
                 <CottageIcon />
