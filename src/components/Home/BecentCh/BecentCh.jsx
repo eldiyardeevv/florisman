@@ -1,5 +1,5 @@
 import React from "react";
-import { SlBasket } from "react-icons/sl";
+// import { SlBasket } from "react-icons/sl";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { useProducts } from "../../../context/ProductContext";
 import { useNavigate, useParams } from "react-router";
