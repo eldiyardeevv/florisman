@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./../components/Home/HomePage/HomePage";
 import Login from "../components/authentocation/Login";
-import Registr from "../components/authentocation/Registr";
+import Registr from "../components/authentocation/Register";
 import AdminPage from "../page/AdminPage";
 import EditProduct from "../components/product/EditProduct";
 import ListProduct from "../components/product/ListProduct";
