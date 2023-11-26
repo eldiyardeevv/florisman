@@ -7,6 +7,7 @@ import Login from "../components/authentocation/Login";
 import Registr from "../components/authentocation/Register";
 import AdminPage from "../page/AdminPage";
 import EditProduct from "../components/product/EditProduct";
+import ListProduct from "../components/product/ListProduct";
 
 const MyRoutes = () => {
   const ADMIN_ROUTES = [
@@ -18,6 +19,7 @@ const MyRoutes = () => {
     { link: "/basket", element: <Basket />, id: 2 },
     { link: "/login", element: <Login />, id: 3 },
     { link: "/registr", element: <Registr />, id: 4 },
+    { link: "/", element: <ListProduct />, id: 5 },
   ];
   return (
     <>
