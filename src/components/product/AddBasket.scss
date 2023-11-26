@@ -1,0 +1,15 @@
+#basket {
+  .basket {
+    &__img {
+      width: 100%;
+      position: relative;
+      &__h1 {
+        font-size: 90px;
+        position: absolute;
+        bottom: -50px;
+        left: 150px;
+        font-weight: 700;
+      }
+    }
+  }
+}
