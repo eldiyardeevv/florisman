@@ -8,6 +8,7 @@ import EditProduct from "../components/product/EditProduct";
 import ListProduct from "../components/product/ListProduct";
 import DetailsPage from "../page/DetailsPage";
 import AddBasket from "../components/product/AddBasket";
+import { ProtectedPoutes } from "../helpers/function";
 
 const MyRoutes = () => {
   const ADMIN_ROUTES = [
@@ -25,9 +26,11 @@ const MyRoutes = () => {
   return (
     <>
       <Routes>
-        {ADMIN_ROUTES.map((el) => (
-          <Route path={el.link} element={el.element} key={el.id} />
-        ))}
+        <Route element={<ProtectedPoutes />}>
+          {ADMIN_ROUTES.map((el) => (
+            <Route path={el.link} element={el.element} key={el.id} />
+          ))}
+        </Route>
         {PUBLIC_ROUTES.map((el) => (
           <Route path={el.link} element={el.element} key={el.id} />
         ))}
