@@ -13,7 +13,7 @@ import { useAuthContext } from "../../../context/AuthContext";
 
 const Header = () => {
   const navigate = useNavigate();
-  const { logout, user } = useAuthContext();
+  const { user } = useAuthContext();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -55,13 +55,13 @@ const Header = () => {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <NavLink to="/registr">
+      <NavLink to="/register">
         <MenuItem onClick={handleMenuClose}>Sign Up</MenuItem>
       </NavLink>
       <NavLink to="/login">
         <MenuItem onClick={handleMenuClose}>Sign In</MenuItem>
       </NavLink>
-      <NavLink to="">
+      <NavLink>
         <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
       </NavLink>
     </Menu>
@@ -71,30 +71,23 @@ const Header = () => {
       <div className="container">
         <div className="header">
           <div className="header__admin">
-            {ADMIN_USERS.map((el, index) =>
-              user && el.email === user.email ? (
-                <IconButton
-                  key={index}
-                  onClick={() => navigate("/admin ")}
-                  size="large"
-                  edge="start"
-                  color="inherit"
-                  aria-label="open drawer"
-                  sx={{ mr: 2 }}
-                >
-                  <Admin />
-                </IconButton>
-              ) : (
-                ""
-              )
-            )}
-
+            <IconButton
+              onClick={() => navigate("/admin")}
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              sx={{ mr: 2 }}
+            >
+              <Admin />
+            </IconButton>
             <span>
               <NavLink to="/home">
                 <CottageIcon />
               </NavLink>
             </span>
           </div>
+
           <div className="header__text">
             <img src={img} alt="" />
             <div className="header__text__block">

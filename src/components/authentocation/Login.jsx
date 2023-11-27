@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import img1bg from "../../img/image-bg.png";
+import { useAuthContext } from "../../context/AuthContext";
 
 const Login = () => {
+  // const { signIn } = useAuthContext();
+  // const [email, SetEmail] = useState();
+  // const [password, SetPassword] = useState();
+  // const [error, SetError] = useState();
+
+  // async function handleSignInSumbit() {
+  //   try {
+  //     await signIn(email, password);
+  //   } catch (error) {
+  //     SetError(error.massage);
+  //   }
+  // }
   return (
     <>
       <div
@@ -24,6 +37,7 @@ const Login = () => {
                     Your email
                   </label>
                   <input
+                    // onChange={(e) => SetEmail(e.target.value)}
                     type="email"
                     name="email"
                     id="email"
@@ -40,6 +54,7 @@ const Login = () => {
                     Your password
                   </label>
                   <input
+                    // onChange={(e) => SetPassword(e.target.value)}
                     type="password"
                     name="password"
                     id="password"
@@ -49,6 +64,7 @@ const Login = () => {
                   />
                 </div>
                 <button
+                  // onClick={handleSignInSumbit}
                   type="submit"
                   className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
