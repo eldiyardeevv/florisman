@@ -6,10 +6,10 @@ import EditProduct from "../components/product/EditProduct";
 import ListProduct from "../components/product/ListProduct";
 import DetailsPage from "../page/DetailsPage";
 import AddBasket from "../components/product/AddBasket";
-// import { ProtectedPoutes } from "../helpers/function";
 import Register from "../components/authentocation/Register";
 import Admin from "../components/admin/Admin";
 import AdminPage from "./../page/AdminPage";
+import { ProtectedRoutes } from "../helpers/function";
 
 const MyRoutes = () => {
   const ADMIN_ROUTES = [
@@ -27,9 +27,11 @@ const MyRoutes = () => {
   return (
     <>
       <Routes>
-        {ADMIN_ROUTES.map((el) => (
-          <Route path={el.link} element={el.element} key={el.id} />
-        ))}
+        <Route element={<ProtectedRoutes />}>
+          {ADMIN_ROUTES.map((el) => (
+            <Route path={el.link} element={el.element} key={el.id} />
+          ))}
+        </Route>
         {PUBLIC_ROUTES.map((el) => (
           <Route path={el.link} element={el.element} key={el.id} />
         ))}

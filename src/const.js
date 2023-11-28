@@ -11,7 +11,7 @@ export const ACTION_CHECK = {
 
 export const ADMIN_USERS = [
   {
-    email: "admin@gmail.com",
+    email: "gulmira.kulunova.ch@gmail.com",
     password: 12345678,
   },
 ];

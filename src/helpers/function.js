@@ -1,11 +1,11 @@
 import { Navigate, Outlet } from "react-router";
 import { useAuthContext } from "../context/AuthContext";
 
-export const ProtectedPoutes = () => {
+export const ProtectedRoutes = () => {
   const { user } = useAuthContext();
 
   function isAllowed() {
-    if (user.email === "admin@gmail.com") {
+    if (user.email === "gulmira.kulunova.ch@gmail.com") {
       return true;
     } else {
       return false;
