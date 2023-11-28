@@ -10,7 +10,6 @@ import Register from "../components/authentocation/Register";
 import Admin from "../components/admin/Admin";
 import AdminPage from "./../page/AdminPage";
 import { ProtectedRoutes } from "../helpers/function";
-
 const MyRoutes = () => {
   const ADMIN_ROUTES = [
     { link: "/admin", element: <AdminPage />, id: 1 },
@@ -20,6 +19,8 @@ const MyRoutes = () => {
     { link: "/home", element: <HomePage />, id: 1 },
     { link: "/basket", element: <AddBasket />, id: 2 },
     { link: "/login", element: <Login />, id: 3 },
+    { link: "/registr", element: <Registr />, id: 4 },
+    { link: "/home", element: <ListProduct />, id: 5 },
     { link: "/register", element: <Register />, id: 4 },
     { link: "/", element: <ListProduct />, id: 5 },
     { link: "/detail/:id", element: <DetailsPage />, id: 6 },

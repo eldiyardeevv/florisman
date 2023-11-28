@@ -45,7 +45,14 @@ const From = ({ isEdit }) => {
     createProduct(product);
     setProduct(init);
   }
-
+  // function saveEditProduct() {
+  //   for (let key in oneProduct) {
+  //     if (!oneProduct[key]) {
+  //       console.log("error");
+  //     }
+  //   }
+  //   edit
+  // }
   return (
     <div>
       <div>

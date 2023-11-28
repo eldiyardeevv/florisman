@@ -3,6 +3,8 @@ import React from "react";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { useProducts } from "../../../context/ProductContext";
 import { useNavigate, useParams } from "react-router";
+const BecentCh = ({ el }) => {
+  const { deleteProduct } = useProducts();
 import { ADMIN_USERS } from "../../../const";
 import { useAuthContext } from "../../../context/AuthContext";
 
@@ -38,6 +40,18 @@ const BecentCh = ({ el }) => {
               className="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
             >
               buy
+            </button>
+            <button
+              onClick={() => deleteProduct(el.id)}
+              className="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            >
+              <MdOutlineDeleteOutline />
+            </button>
+            <button
+              onClick={() => navigate(`/edit/${el.id}`)}
+              className="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            >
+              edit
             </button>
             {ADMIN_USERS.map((el) =>
               user && el.email === user.email ? (
