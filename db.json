@@ -23,6 +23,46 @@
       "price": 234567,
       "image": "sdfghjk",
       "id": 4
+    },
+    {
+      "title": "Букет в шляпной коробке из роз и эвкалипта",
+      "description": "Композиция из цветов нежного, светло-розового оттенка станет идеальным подарком для любимой. Пышный букет, декорированный листьями эвкалипта, сразу вызовет радостную улыбку и создаст романтичную атмосферу.",
+      "category": "",
+      "price": 9430,
+      "image": "https://moscow.eliteflower.ru/upload/resize_cache/iblock/490/500_500_2/490246f2fadba0fe7241161ffea0af4a.jpg",
+      "id": 5
+    },
+    {
+      "title": "БУКЕТ РОЗОВЫХ РОЗ",
+      "description": "",
+      "category": "",
+      "price": 1000,
+      "image": "https://flowers-city.com.ua/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/_/1/_1_1_3_1.jpg",
+      "id": 6
+    },
+    {
+      "title": "КРАСНЫЕ РОЗЫ",
+      "description": "",
+      "category": "",
+      "price": "",
+      "image": "https://www.lotlike.ru/upload/iblock/274/krasnye-rozy-poshtuchno.jpg",
+      "id": 7
+    },
+    {
+      "title": " Букет цветов Градиент в коробке",
+      "description": "",
+      "category": "",
+      "price": 2000,
+      "image": "https://www.lotlike.ru/upload/iblock/a70/3201_buket_tsvetov_gradient_v_korobke_03.jpg",
+      "id": 8
+    },
+    {
+      "title": "Букет цветов хризантемы и розы",
+      "description": "",
+      "category": "",
+      "price": 4000,
+      "image": "https://mur-mur.top/uploads/posts/2023-04/1682006556_mur-mur-top-p-buket-tsvetov-khrizantemi-i-rozi-krasivo-1.jpg",
+      "id": 9
     }
   ]
 }
