@@ -19,7 +19,7 @@ const MyRoutes = () => {
     { link: "/basket", element: <AddBasket />, id: 2 },
     { link: "/login", element: <Login />, id: 3 },
     { link: "/registr", element: <Registr />, id: 4 },
-    { link: "/", element: <ListProduct />, id: 5 },
+    { link: "/home", element: <ListProduct />, id: 5 },
     { link: "/detail/:id", element: <DetailsPage />, id: 6 },
   ];
   return (
